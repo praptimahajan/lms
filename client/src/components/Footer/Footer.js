@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-10 animate__animated animate__fadeInUp">
+    <footer className="bg-gray-900 text-white py-10 px-20 animate__animated animate__fadeInUp">
       <div className="container mx-auto flex flex-col md:flex-row justify-between px-4">
         {/* Logo and Social Media Links */}
         <div className="mb-8 md:mb-0">

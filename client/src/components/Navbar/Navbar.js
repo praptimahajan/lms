@@ -14,9 +14,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
 
 const navigation = [
-    { name: 'Dashboard', href: '#', current: true },
-    { name: 'Home', href: '#', current: false },
-    { name: 'Courses', href: '#', current: false },
+    { name: 'Dashboard', href: 'dashboard', current: true },
+    { name: 'Home', href: '/', current: false },
+    { name: 'Courses', href: 'courses', current: false },
     { name: 'Notes', href: '#', current: false },
     { name: 'Blog', href: '#', current: false },
   ]
@@ -45,14 +45,15 @@ function Navbar() {
                 </DisclosureButton>
               </div>
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex flex-shrink-0 items-center mr-48">
-                  {/* <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                <div className="flex flex-shrink-0 items-center mr-44">
+                  <img
+                    className="h-14 w-auto"
+                    src="https://media.licdn.com/dms/image/D560BAQFtWM46bCiJfQ/company-logo_200_200/0/1695197175289?e=2147483647&v=beta&t=46cYmda122C_egnedarsDunJhoZgjhMYaeUJixhrbXM"
                     alt="Your Company"
-                  /> vivek coding school */}
-                  Vivek Coding School
+                  />   <p className='text-2xl font-bold ml-3 '>Arohi Software</p>
+               
                 </div>
+              
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
