@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const courses = [
   {
@@ -12,6 +13,7 @@ const courses = [
     auther: "Vivek Shejole",
     price: "₹ 2000",
     buy: "Buy Now",
+    link:"/overview"
   },
   {
     id: 2,
@@ -47,7 +49,8 @@ function Courses() {
       <h1 className="text-white text-6xl ml-20 font-bold mb-10">
         Courses Offered.
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ml-20">
+     <Link to="/overview">
+     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ml-20">
         {courses.map((course) => (
           <div
             key={course.id}
@@ -77,6 +80,7 @@ function Courses() {
           </div>
         ))}
       </div>
+     </Link>
     </div>
   );
 }
